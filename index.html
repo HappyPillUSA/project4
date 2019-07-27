@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- modify the prototype file to include  lang=EN and some more semantic HTML tags -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Project Ipnd Pixel Art Maker">
+    <meta name="keyword" content="pixel, art, maker,programing,js,udacity">
+    <meta name="author" content="Ana Grijajla (Aka HappyPill)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Pixel Art Maker</h1>
+    </header>
+
+    <main>
+
+        <h2>Choose Grid Size</h2>
+        <!--form for user  to select size of grid -->
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1">
+            Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="1">
+            <input type="submit">
+        </form>
+        <!--built-in color picker-->
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+        <!--pixel table will display here- inherit trs,tds-->
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+    </main>
+    <footer>
+        <p>Udacity IpNd Project</p>
+        <p>@HappyPill-2019</p>
+    </footer>
+    <!--build out the design.js file to achieve 
+        all the interactive elements on the page!-->
+    <script src="designs.js"></script>
+</body>
+
+</html>
